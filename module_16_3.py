@@ -3,7 +3,7 @@ from typing import Annotated
 
 app = FastAPI()
 
-users = [{'id': 1, 'name': 'Timur', 'age': 18}]
+users = [{'id': 1, 'username': 'Timur', 'age': 18}]
 
 @app.get("/")
 async def main():
