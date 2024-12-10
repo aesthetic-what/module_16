@@ -33,6 +33,7 @@ async def full_user(user: User):
     users.append(new_user)
     return new_user
 
+
 @app.put("/users/{user_id}/{username}/{age}", response_model=User)
 async def update_user(user_id: int, user: User):
     for u in users:
